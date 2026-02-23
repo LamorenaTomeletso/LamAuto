@@ -6,11 +6,13 @@ body {
   padding: 0;
   line-height: 1.6;}
 
-header{
-    background-color: #4caf50;
-    color: white;
-    padding: 20px;
-    text-align: center;}  
+/* Remove legacy green header bar, let the Bootstrap navbar control the color */
+header {
+  background: transparent !important;
+  padding: 0;            /* the navbar has its own padding */
+  color: inherit;
+  text-align: initial;   /* Bootstrap handles alignment */
+}
 
 header h1{
     margin: 0;
